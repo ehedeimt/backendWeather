@@ -7,7 +7,7 @@ const app = express();
 app.use(cors({
   origin: 'https://eimtcms.eimt.uoc.edu', // permite ese dominio
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true
+  credentials: false
 }));
 
 app.use(express.json());
